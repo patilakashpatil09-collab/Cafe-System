@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin - Menu</h2>
+<img src="{{ url_for('static', filename='css/logo.jpg') }}" alt="Admin Image" class="img-fluid rounded shadow mb-4" height="200px" width="300px">
+<form method="POST" action="{{ url_for('add_menu_item') }}" class="admin-form">
+  <input name="name" placeholder="Item name" required>
+  <input name="price" placeholder="Price" required>
+  <button type="submit">Add</button>
+</form>
+
+<table class="table">
+  <tr><th>ID</th><th>Name</th><th>Price</th><th>Action</th></tr>
+  {% for id, item in menu.items() %}
+  <tr>
+    <td>{{ id }}</td>
+    <td>{{ item.name }}</td>
+    <td>₹{{ "%.2f"|format(item.price) }}</td>
+    <td><a href="{{ url_for('delete_menu_item', item_id=id) }}">Delete</a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
