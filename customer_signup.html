@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Customer Signup - {{ cafe_name }}</title></head>
+<body>
+  <h2>Customer Signup</h2>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul>
+      {% for cat, msg in messages %}
+        <li><strong>{{cat}}</strong>: {{msg}}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <!-- Signup supporting both email/password and simple id/name -->
+  <form method="post" action="{{ url_for('customer_signup') }}">
+    <fieldset>
+      <legend>Email signup</legend>
+      <label>Email: <input name="email" type="email" /></label><br/>
+      <label>Name: <input name="name" /></label><br/>
+      <label>Password: <input name="password" type="password" /></label><br/>
+      <button type="submit">Sign up</button>
+    </fieldset>
+  </form>
+
+  <hr/>
+
+  <form method="post" action="{{ url_for('customer_signup') }}">
+    <fieldset>
+      <legend>Quick Signup (ID + Name)</legend>
+      <label>ID: <input name="customer_id" /></label><br/>
+      <label>Name: <input name="customer_name" /></label><br/>
+      <button type="submit">Quick Signup</button>
+    </fieldset>
+  </form>
+
+  <p><a href="{{ url_for('customer_login') }}">Already have an account? Login</a></p>
+</body>
+</html>

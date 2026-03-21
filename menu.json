@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "Pasta",
+    "price": 150,
+    "images": "/static/images/pasta.jpg"
+  },
+  "3": {
+    "name": "Veg Sandwich",
+    "price": 120,
+    "images": "/static/images/sandwich.jpg"
+  },
+  "4": {
+    "name": "Pizza",
+    "price": 79,
+    "images": "/static/images/pizza.jpg"
+  },
+  "5": {
+    "name": "Milk Shake",
+    "price": 35,
+    "images": "/static/images/milkshake.jpg"
+  },
+  "6": {
+    "name": "Coffee",
+    "price": 25,
+    "images": "/static/images/coffee.jpg"
+  },
+  "7": {
+    "name": "Burger",
+    "price": 147,
+    "images": "/static/images/burger.jpg"
+  },
+  "8": {
+    "name": "Cold Drink",
+    "price": 20,
+    "images": "/static/images/cold_drinks.png"
+  }
+}
