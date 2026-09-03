@@ -1,34 +1,37 @@
 {
   "1": {
-    "name": "Espresso",
-    "price": 60
-  },
-  "2": {
-    "name": "Cappuccino",
-    "price": 90
+    "name": "Pasta",
+    "price": 150,
+    "images": "/static/images/pasta.jpg"
   },
   "3": {
     "name": "Veg Sandwich",
-    "price": 120
+    "price": 120,
+    "images": "/static/images/sandwich.jpg"
   },
-  "1762240467": {
+  "4": {
     "name": "Pizza",
-    "price": 79.0,
-    "available": true
+    "price": 79,
+    "images": "/static/images/pizza.jpg"
   },
-  "1762240515": {
+  "5": {
     "name": "Milk Shake",
-    "price": 35.0,
-    "available": true
+    "price": 35,
+    "images": "/static/images/milkshake.jpg"
   },
-  "1762240543": {
+  "6": {
     "name": "Coffee",
-    "price": 25.0,
-    "available": true
+    "price": 25,
+    "images": "/static/images/coffee.jpg"
   },
-  "1762489143158": {
+  "7": {
     "name": "Burger",
-    "price": 147.0,
-    "added_at": "2025-11-07 15:19:03"
+    "price": 147,
+    "images": "/static/images/burger.jpg"
+  },
+  "8": {
+    "name": "Cold Drink",
+    "price": 20,
+    "images": "/static/images/cold_drinks.png"
   }
 }

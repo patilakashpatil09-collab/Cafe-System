@@ -1,300 +1,211 @@
 {
-  "1762489950149": {
-    "id": "1762489950149",
-    "customer": "ningadalli26@gmail.com",
-    "name": "Akash Patil",
+  "1764316173891": {
+    "id": "1764316173891",
+    "customer": "013",
+    "name": "Patil",
+    "place": "Kalaburagi",
+    "contact": "9665602903",
     "items": [
       {
-        "name": "Burger",
-        "price": 147.0,
+        "item_id": "3",
+        "name": "Veg Sandwich",
+        "price": 120.0,
         "qty": 1,
-        "subtotal": 147.0
-      }
-    ],
-    "total": 147.0,
-    "status": "completed",
-    "payment_status": "paid",
-    "created_at": "2025-11-07 15:32:30",
-    "start_time": "2025-11-07 16:00:00",
-    "completed_at": "2025-11-07 16:00:05",
-    "wait_time": "0 mins",
-    "paid_at": "2025-11-08 18:59:07"
-  },
-  "1762489980445": {
-    "id": "1762489980445",
-    "customer": "ningadalli26@gmail.com",
-    "name": "Akash Patil",
-    "items": [
-      {
-        "name": "Coffee",
-        "price": 25.0,
-        "qty": 1,
-        "subtotal": 25.0
-      },
-      {
-        "name": "Burger",
-        "price": 147.0,
-        "qty": 1,
-        "subtotal": 147.0
-      }
-    ],
-    "total": 172.0,
-    "status": "completed",
-    "payment_status": "paid",
-    "created_at": "2025-11-07 15:33:00",
-    "start_time": "2025-11-07 16:00:07",
-    "completed_at": "2025-11-07 16:00:12",
-    "wait_time": "0 mins",
-    "paid_at": "2025-11-08 18:59:36"
-  },
-  "1762490312073": {
-    "id": "1762490312073",
-    "customer": "ningadalli26@gmail.com",
-    "name": "Akash Patil",
-    "items": [
-      {
-        "name": "Espresso",
-        "price": 60,
-        "qty": 1,
-        "subtotal": 60
-      },
-      {
-        "name": "Milk Shake",
-        "price": 35.0,
-        "qty": 1,
-        "subtotal": 35.0
-      },
-      {
-        "name": "Coffee",
-        "price": 25.0,
-        "qty": 1,
-        "subtotal": 25.0
+        "subtotal": 120.0
       }
     ],
     "total": 120.0,
-    "status": "edited",
-    "payment_status": "pending",
-    "created_at": "2025-11-07 15:38:32",
-    "edited_at": "2025-11-07 15:39:02"
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-28 18:49:33",
+    "start_time": "2025-11-28 18:50:08",
+    "completed_at": "2025-11-28 18:50:21",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-28 18:50:31"
   },
-  "1762490664869": {
-    "id": "1762490664869",
-    "customer": "ningadalli26@gmail.com",
-    "name": "Akash Patil",
+  "1764317949445": {
+    "id": "1764317949445",
+    "customer": "03",
+    "name": "gundu",
+    "place": "Athani",
+    "contact": "8431069004",
     "items": [
       {
-        "name": "Cappuccino",
-        "price": 90,
-        "qty": 1,
-        "subtotal": 90
-      },
-      {
+        "item_id": "3",
         "name": "Veg Sandwich",
         "price": 120,
         "qty": 1,
         "subtotal": 120
       },
       {
-        "name": "Burger",
-        "price": 147.0,
-        "qty": 1,
-        "subtotal": 147.0
-      }
-    ],
-    "total": 357.0,
-    "status": "edited",
-    "payment_status": "paid",
-    "created_at": "2025-11-07 15:44:24",
-    "edited_at": "2025-11-07 15:44:40",
-    "paid_at": "2025-11-07 15:44:47"
-  },
-  "1762491557899": {
-    "id": "1762491557899",
-    "customer": "ningadalli26@gmail.com",
-    "name": "Akash Patil",
-    "items": [
-      {
-        "name": "Pizza",
-        "price": 79.0,
-        "qty": 1,
-        "subtotal": 79.0
-      },
-      {
+        "item_id": "6",
         "name": "Coffee",
-        "price": 25.0,
+        "price": 25,
         "qty": 1,
-        "subtotal": 25.0
-      },
-      {
-        "name": "Burger",
-        "price": 147.0,
-        "qty": 1,
-        "subtotal": 147.0
+        "subtotal": 25
       }
     ],
-    "total": 251.0,
-    "status": "edited",
-    "payment_status": "paid",
-    "created_at": "2025-11-07 15:59:17",
-    "edited_at": "2025-11-07 15:59:33",
-    "paid_at": "2025-11-07 15:59:37"
-  },
-  "1762491857381": {
-    "id": "1762491857381",
-    "customer": "gundu12@gmail.com",
-    "name": "Gundu",
-    "items": [
-      {
-        "name": "Pizza",
-        "price": 79.0,
-        "qty": 1,
-        "subtotal": 79.0
-      },
-      {
-        "name": "Coffee",
-        "price": 25.0,
-        "qty": 1,
-        "subtotal": 25.0
-      },
-      {
-        "name": "Burger",
-        "price": 147.0,
-        "qty": 1,
-        "subtotal": 147.0
-      }
-    ],
-    "total": 251.0,
-    "status": "edited",
-    "payment_status": "paid",
-    "created_at": "2025-11-07 16:04:17",
-    "paid_at": "2025-11-07 16:05:02",
-    "edited_at": "2025-11-07 16:05:41"
-  },
-  "1762588615579": {
-    "id": "1762588615579",
-    "customer": "ningadalli26@gmail.com",
-    "name": "Akash Patil",
-    "items": [
-      {
-        "name": "Pizza",
-        "price": 79.0,
-        "qty": 1,
-        "subtotal": 79.0
-      },
-      {
-        "name": "Coffee",
-        "price": 25.0,
-        "qty": 1,
-        "subtotal": 25.0
-      }
-    ],
-    "total": 104.0,
-    "status": "edited",
-    "payment_status": "paid",
-    "created_at": "2025-11-08 18:56:55",
-    "edited_at": "2025-11-08 18:57:29",
-    "paid_at": "2025-11-08 18:57:32"
-  },
-  "1762588999748": {
-    "id": "1762588999748",
-    "customer": "amar12@gmai.com",
-    "name": "amar",
-    "items": [
-      {
-        "name": "Pizza",
-        "price": 79.0,
-        "qty": 1,
-        "subtotal": 79.0
-      }
-    ],
-    "total": 79.0,
+    "total": 145,
     "status": "completed",
     "payment_status": "pending",
-    "created_at": "2025-11-08 19:03:19",
-    "start_time": "2025-11-08 19:03:47",
-    "completed_at": "2025-11-08 19:03:59",
+    "created_at": "2025-11-28 19:19:09",
+    "start_time": "2025-11-28 20:07:03",
+    "completed_at": "2025-11-28 20:07:04",
     "wait_time": "0 mins"
   },
-  "1762589689870": {
-    "id": "1762589689870",
-    "customer": "akash12@gmail.com",
-    "name": "Akash Patil",
+  "1764319595442": {
+    "id": "1764319595442",
+    "customer": "1234",
+    "name": "gundu",
+    "place": "Athani",
+    "contact": "9665602903",
     "items": [
       {
-        "name": "Pizza",
-        "price": 79.0,
+        "item_id": "3",
+        "name": "Veg Sandwich",
+        "price": 120.0,
         "qty": 1,
-        "subtotal": 79.0
+        "subtotal": 120.0
       },
       {
-        "name": "Coffee",
-        "price": 25.0,
-        "qty": 1,
-        "subtotal": 25.0
-      }
-    ],
-    "total": 104.0,
-    "status": "completed",
-    "payment_status": "pending",
-    "created_at": "2025-11-08 19:14:49",
-    "start_time": "2025-11-08 23:34:52",
-    "completed_at": "2025-11-08 23:34:57",
-    "wait_time": "0 mins"
-  },
-  "1762605215569": {
-    "id": "1762605215569",
-    "customer": "anand12@gmai.com",
-    "name": "anand",
-    "items": [
-      {
-        "name": "Coffee",
-        "price": 25.0,
-        "qty": 1,
-        "subtotal": 25.0
-      },
-      {
+        "item_id": "7",
         "name": "Burger",
         "price": 147.0,
         "qty": 1,
         "subtotal": 147.0
       }
     ],
-    "total": 172.0,
-    "status": "edited",
+    "total": 267.0,
+    "status": "completed",
     "payment_status": "paid",
-    "created_at": "2025-11-08 23:33:35",
-    "edited_at": "2025-11-08 23:34:32",
-    "paid_at": "2025-11-08 23:35:13"
+    "created_at": "2025-11-28 19:46:35",
+    "start_time": "2025-11-28 19:49:46",
+    "completed_at": "2025-11-28 19:49:49",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-28 19:49:54"
   },
-  "1762661191747": {
-    "id": "1762661191747",
-    "customer": "anuj12@gmail.com",
-    "name": "anuj",
+  "1764321027985": {
+    "id": "1764321027985",
+    "customer": "1234",
+    "name": "gundu",
+    "place": "Athani",
+    "contact": "9665602903",
     "items": [
       {
-        "name": "Pizza",
-        "price": 79.0,
+        "item_id": "3",
+        "name": "Veg Sandwich",
+        "price": 120.0,
         "qty": 1,
-        "subtotal": 79.0
+        "subtotal": 120.0
+      }
+    ],
+    "total": 120.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-28 20:10:27",
+    "start_time": "2025-11-28 20:11:25",
+    "completed_at": "2025-11-28 20:11:26",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-28 20:12:14"
+  },
+  "1764370792188": {
+    "id": "1764370792188",
+    "customer": "09",
+    "name": "Dinesh",
+    "place": "Belagavi",
+    "contact": "8431069004",
+    "items": [
+      {
+        "item_id": "1",
+        "name": "Pasta",
+        "price": 150.0,
+        "qty": 1,
+        "subtotal": 150.0
       },
       {
+        "item_id": "5",
         "name": "Milk Shake",
         "price": 35.0,
         "qty": 1,
         "subtotal": 35.0
       },
       {
+        "item_id": "7",
         "name": "Burger",
         "price": 147.0,
         "qty": 1,
         "subtotal": 147.0
       }
     ],
-    "total": 261.0,
+    "total": 332.0,
     "status": "edited",
+    "payment_status": "pending",
+    "created_at": "2025-11-29 09:59:52",
+    "start_time": null,
+    "completed_at": null,
+    "wait_time": null,
+    "edited_at": "2025-11-29 10:00:33"
+  },
+  "1764370983981": {
+    "id": "1764370983981",
+    "customer": "012",
+    "name": "Joy",
+    "place": "Belagavi",
+    "contact": "9880219053",
+    "items": [
+      {
+        "item_id": "1",
+        "name": "Pasta",
+        "price": 150.0,
+        "qty": 1,
+        "subtotal": 150.0
+      },
+      {
+        "item_id": "3",
+        "name": "Veg Sandwich",
+        "price": 120.0,
+        "qty": 1,
+        "subtotal": 120.0
+      }
+    ],
+    "total": 270.0,
+    "status": "completed",
     "payment_status": "paid",
-    "created_at": "2025-11-09 15:06:31",
-    "edited_at": "2025-11-09 15:07:23",
-    "paid_at": "2025-11-09 15:07:36"
+    "created_at": "2025-11-29 10:03:03",
+    "start_time": "2025-11-29 10:03:27",
+    "completed_at": "2025-11-29 10:03:50",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-29 10:04:08"
+  },
+  "1772969011524": {
+    "id": "1772969011524",
+    "customer": "01",
+    "name": "Sachin",
+    "place": "Nidasoshi",
+    "contact": "66554692",
+    "items": [
+      {
+        "item_id": "4",
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "item_id": "5",
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      }
+    ],
+    "total": 114.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2026-03-08 22:23:31",
+    "start_time": "2026-03-08 22:25:15",
+    "completed_at": "2026-03-08 22:25:50",
+    "wait_time": "0 mins",
+    "paid_at": "2026-03-08 22:26:09"
   }
 }

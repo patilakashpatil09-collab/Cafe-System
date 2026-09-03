@@ -17,6 +17,7 @@
             </tr>
           </thead>
           <tbody>
+
             {% set prev = {} %}
             {% for item in order["items"] %}
               {% set _ = prev.update({ item["name"]: item["qty"] }) %}
@@ -28,7 +29,8 @@
               <td>{{ item["name"] }}</td>
               <td>{{ "%.2f"|format(item["price"]) }}</td>
               <td>
-                <input type="number" name="qty_{{ id }}" value="{{ old_qty }}" min="0" class="form-control text-center" style="width:80px; margin:auto;">
+                <input type="number" name="qty_{{ id }}" value="{{ old_qty }}" min="0"
+                       class="form-control text-center" style="width:80px; margin:auto;">
               </td>
               <td>
                 {% if old_qty > 0 %}
@@ -44,12 +46,19 @@
 
         <div class="text-center mt-3">
           <button type="submit" class="btn btn-success btn-lg">Update Order</button>
-          <a href="{{ url_for('view_orders') }}" class="btn btn-outline-dark btn-lg ms-2">Cancel</a>
+
+          <a href="{{ url_for('customer_dashboard') if session.get('customer') and not session.get('admin_logged_in')
+              else url_for('view_orders') }}"
+             class="btn btn-outline-dark btn-lg ms-2">
+            Cancel
+          </a>
         </div>
       </form>
+
       {% else %}
       <div class="alert alert-danger text-center">Order not found.</div>
       {% endif %}
+
     </div>
   </div>
 </div>

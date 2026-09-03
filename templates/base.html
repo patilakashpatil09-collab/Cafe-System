@@ -11,17 +11,15 @@
       <img src="{{ url_for('static', filename='css/op.jpg') }}" alt="Cafe Logo" class="logo">
       <nav>
         <a href="{{ url_for('index') }}">Home</a> |
-        <a href="{{ url_for('view_orders') }}">All Orders</a> |
-        <a href="{{ url_for('report') }}">Report</a> |
-        <a href="{{ url_for('staff_dashboard') }}">Staff</a> |
         {% if session.get('admin_logged_in') %}
-          <a href="{{ url_for('admin') }}">Admin</a> |
+          <a href="{{ url_for('admin') }}">Admin Dashboard</a> |
           <a href="{{ url_for('admin_logout') }}">Logout</a>
         {% else %}
           <a href="{{ url_for('admin_login') }}">Admin Login</a>
         {% endif %}
         {% if session.get('customer') %}
           | <strong>{{ session.customer.name }}</strong>
+          | <a href="{{ url_for('customer_dashboard') }}">My Dashboard</a>
           | <a href="{{ url_for('customer_logout') }}">Logout</a>
         {% else %}
           | <a href="{{ url_for('customer_login') }}">Customer Login</a>
@@ -46,4 +44,4 @@
       <p>&copy; {{ cafe_name or "Royal Cafe" }} - Built with ❤️</p>
     </footer>
   </body>
-</html> update it 
+</html>

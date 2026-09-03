@@ -1,21 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Menu</h2>
-<form method="POST" action="{{ url_for('place_order') if False else url_for('place_order') }}">
-  <div class="menu-grid">
-  {% for id, item in menu.items() %}
-    <div class="menu-item">
-      <h3>{{ item.name }}</h3>
-      <p>₹{{ "%.2f"|format(item.price) }}</p>
-      <label>Qty: <input type="number" name="qty_{{ id }}" min="0" value="0"></label>
-    </div>
-  {% endfor %}
-  </div>
-  <div style="margin-top:16px;">
+<h2>Menu - {{ cafe_name }}</h2>
+
+{% if session.get('customer') %}
+  <p>Welcome, <strong>{{ session.customer.name }}</strong>! | <a href="{{ url_for('customer_dashboard') }}">Go to Dashboard</a></p>
+{% endif %}
+
+<form method="POST" action="{{ url_for('place_order') }}">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Item Name</th>
+        <th>Price (₹)</th>
+        <th>Quantity</th>
+        <th>Add to Cart</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for id, item in menu.items() %}
+      <tr>
+        <td>
+          <img src="{{ item.images if item.images else url_for('static', filename='images/placeholder.png') }}" 
+               alt="{{ item.name }}" 
+               style="width: 80px; height: 80px; object-fit: cover; border-radius: 5px;">
+        </td>
+        <td>{{ item.name }}</td>
+        <td>₹{{ "%.2f"|format(item.price) }}</td>
+        <td>
+          <input type="number" name="qty_{{ id }}" min="0" value="0" style="width: 60px;">
+        </td>
+        <td>
+          <button type="button" onclick="document.getElementsByName('qty_{{ id }}')[0].value = parseInt(document.getElementsByName('qty_{{ id }}')[0].value || 0) + 1" class="btn btn-sm btn-success">➕ Add</button>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div style="margin-top:16px; text-align: center;">
     {% if session.get('customer') %}
-      <button type="submit">Place Order</button>
+      <button type="submit" class="btn btn-primary btn-lg">Place Order</button>
     {% else %}
-      <a href="{{ url_for('customer_login') }}">Login to place order</a>
+      <a href="{{ url_for('customer_login') }}" class="btn btn-warning btn-lg">Login to Place Order</a>
     {% endif %}
   </div>
 </form>

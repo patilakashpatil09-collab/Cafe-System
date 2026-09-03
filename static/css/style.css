@@ -2,18 +2,21 @@
    General Page Layout
 ---------------------------------*/
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #a3a2a0;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    background: url('/static/images/image.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
 }
+
 
 /* ------------------------------
    Header & Navigation
 ---------------------------------*/
 .site-header {
-  background: linear-gradient(90deg, #1cacdc, #208fcb);
+  background: linear-gradient(90deg, hsl(83, 91%, 32%), #4c960f);
   color: #fff;
   text-align: center;
   padding: 20px 10px;
@@ -25,7 +28,7 @@ body {
 
 .site-header h1 {
   margin: 10px 0 5px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -64,7 +67,7 @@ nav a:hover {
 .container {
   max-width: 900px;
   margin: 30px auto;
-  background: #fff;
+  background: #86a48f;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -86,7 +89,7 @@ nav a:hover {
 }
 
 .table th {
-  background-color: #b22222;
+  background-color: #b53d89;
   color: #fff;
   font-weight: 600;
 }
@@ -97,6 +100,15 @@ nav a:hover {
 
 .table tr:hover {
   background-color: #ffe4e1;
+}
+
+.table-dark th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table-bordered {
+  border: 2px solid #ddd;
 }
 
 /* ------------------------------
@@ -174,8 +186,8 @@ button:hover {
 }
 
 .menu-item {
-  background: #fff8f8;
-  border: 1px solid #f2dede;
+  background: #d95252;
+  border: 1px solid #c24545;
   border-radius: 10px;
   text-align: center;
   padding: 15px;
@@ -197,13 +209,355 @@ button:hover {
    Footer
 ---------------------------------*/
 .site-footer {
-  background: #8b0000;
+  background: #810c21;
   color: #fff;
   text-align: center;
   padding: 10px;
   margin-top: 30px;
   font-size: 0.9rem;
-  border-top: 3px solid #b22222;
+  border-top: 3px solid #3269a0;
+}
+
+/* ------------------------------
+   Button Styles (NEW)
+---------------------------------*/
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #dc3545;
+  border: 2px solid #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #6c757d;
+  border: 2px solid #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+/* ------------------------------
+   Card & Badge Styles (NEW)
+---------------------------------*/
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  padding: 12px 15px;
+  border-radius: 10px 10px 0 0;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.shadow {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.shadow-lg {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bg-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.bg-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.bg-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.text-dark {
+  color: #333 !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* ------------------------------
+   Alert Styles (NEW)
+---------------------------------*/
+.alert {
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+/* ------------------------------
+   Utility Classes (NEW)
+---------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mt-1 { margin-top: 5px; }
+.mt-2 { margin-top: 10px; }
+.mt-3 { margin-top: 15px; }
+.mt-4 { margin-top: 20px; }
+.mt-5 { margin-top: 30px; }
+
+.mb-1 { margin-bottom: 5px; }
+.mb-2 { margin-bottom: 10px; }
+.mb-3 { margin-bottom: 15px; }
+.mb-4 { margin-bottom: 20px; }
+.mb-5 { margin-bottom: 30px; }
+
+.ms-1 { margin-left: 5px; }
+.ms-2 { margin-left: 10px; }
+.ms-3 { margin-left: 15px; }
+
+.me-1 { margin-right: 5px; }
+.me-2 { margin-right: 10px; }
+.me-3 { margin-right: 15px; }
+
+.p-1 { padding: 5px; }
+.p-2 { padding: 10px; }
+.p-3 { padding: 15px; }
+.p-4 { padding: 20px; }
+.p-5 { padding: 30px; }
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0,123,255,0.4);
+}
+
+.form-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0,123,255,0.4);
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.border-0 {
+  border: none;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 /* ------------------------------
@@ -228,5 +582,10 @@ button:hover {
   .table th, .table td {
     font-size: 14px;
     padding: 6px;
+  }
+
+  .btn-lg {
+    padding: 10px 18px;
+    font-size: 16px;
   }
 }
