@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-4">
+  <div class="card shadow-lg">
+    <div class="card-body">
+
+      <h2 class="text-center text-primary mb-4">📊 Advanced Reports – {{ cafe_name }}</h2>
+
+      <hr>
+
+      <!-- Daily Report -->
+      <h3 class="text-success">📅 Today's Orders</h3>
+      <p>Total: {{ daily_orders|length }}</p>
+      <table class="table table-bordered text-center mt-2">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th><th>Customer</th><th>Total (₹)</th><th>Status</th><th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for oid, o in daily_orders.items() %}
+          <tr>
+            <td>{{ oid }}</td>
+            <td>{{ o.name }}</td>
+            <td>₹{{ o.total }}</td>
+            <td>{{ o.status|capitalize }}</td>
+            <td>{{ o.created_at }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <hr>
+
+      <!-- Weekly Report -->
+      <h3 class="text-warning">📆 This Week's Orders</h3>
+      <p>Total: {{ weekly_orders|length }}</p>
+      <table class="table table-bordered text-center mt-2">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th><th>Customer</th><th>Total (₹)</th><th>Status</th><th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for oid, o in weekly_orders.items() %}
+          <tr>
+            <td>{{ oid }}</td>
+            <td>{{ o.name }}</td>
+            <td>₹{{ o.total }}</td>
+            <td>{{ o.status|capitalize }}</td>
+            <td>{{ o.created_at }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <hr>
+
+      <!-- Monthly Report -->
+      <h3 class="text-info">📅 This Month's Orders</h3>
+      <p>Total: {{ monthly_orders|length }}</p>
+      <table class="table table-bordered text-center mt-2">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th><th>Customer</th><th>Total (₹)</th><th>Status</th><th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for oid, o in monthly_orders.items() %}
+          <tr>
+            <td>{{ oid }}</td>
+            <td>{{ o.name }}</td>
+            <td>₹{{ o.total }}</td>
+            <td>{{ o.status|capitalize }}</td>
+            <td>{{ o.created_at }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <hr>
+
+      <!-- Most Popular Items -->
+      <h3 class="text-danger">🔥 Most Popular Items</h3>
+      <table class="table table-bordered text-center mt-3">
+        <thead class="table-dark">
+          <tr>
+            <th>Item</th>
+            <th>Total Quantity Ordered</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item, qty in popular_items %}
+          <tr>
+            <td>{{ item }}</td>
+            <td>{{ qty }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <div class="text-center mt-4">
+    <button onclick="window.print()" class="btn btn-primary">🖨 Print This Report</button>
+    <a href="{{ url_for('admin') }}" class="btn btn-dark">Back to Dashboard</a>
+</div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

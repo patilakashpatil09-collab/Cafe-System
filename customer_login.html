@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <div class="card shadow-lg" style="max-width: 500px; margin: auto;">
+    <div class="card-body">
+      <h2 class="text-center text-primary mb-4">Customer Login</h2>
+
+      <form method="post" action="{{ url_for('customer_login') }}">
+
+        <div class="mb-3">
+          <label class="form-label"><strong>Customer ID:</strong></label>
+          <input name="customer_id" type="text" class="form-control"
+                 placeholder="Enter your ID" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"><strong>Customer Name:</strong></label>
+          <input name="customer_name" type="text" class="form-control"
+                 placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"><strong>Place:</strong></label>
+          <input name="place" type="text" class="form-control"
+                 placeholder="Enter your place" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"><strong>Contact Number:</strong></label>
+          <input name="contact" type="tel" class="form-control"
+                 placeholder="Enter your mobile number" required>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-lg">Login</button>
+        </div>
+      </form>
+
+      <div class="text-center mt-3">
+        <p><a href="{{ url_for('index') }}">Back to Menu</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
